@@ -15,20 +15,26 @@ class WidgetsContainer extends StatelessWidget {
         child: Center(
           child: SingleChildScrollView(
             child: Wrap(
-              spacing: 30.0, 
+              spacing: 30.0,
               runSpacing: 50.0,
               children: [
                 // Container 1
-                Container(
-                  width: (MediaQuery.of(context).size.width / 2) -
-                      50, // Half screen width
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
-                  color: Colors.blue,
-                  child: const Text(
-                    'SHROIsDA 1',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.white),
+                GestureDetector(
+                  // onTap: ,
+                  child: Container(
+                    width: (MediaQuery.of(context).size.width / 2) -
+                        50, // Half screen width
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+                    color: Colors.blue,
+                    child: const Text(
+                      'First Card Widgets',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white),
+                    ),
                   ),
                 ),
                 // Container 2
@@ -40,7 +46,10 @@ class WidgetsContainer extends StatelessWidget {
                   child: const Text(
                     'SHROIDA 2',
                     textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w800,
+                        color: Colors.white),
                   ),
                 ),
                 // Container 3
@@ -52,7 +61,10 @@ class WidgetsContainer extends StatelessWidget {
                   child: const Text(
                     'SHROIDA 3',
                     textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w800,
+                        color: Colors.white),
                   ),
                 ),
                 // Container 4
@@ -64,7 +76,10 @@ class WidgetsContainer extends StatelessWidget {
                   child: const Text(
                     'SHROIDA 4',
                     textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w800,
+                        color: Colors.white),
                   ),
                 ),
               ],
