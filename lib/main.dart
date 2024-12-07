@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/App%20Router/app_router.dart';
 import 'package:flutter_widgets/widgets-container/widgets_container.dart';
 
 void main() {
@@ -10,14 +11,20 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home:HomePage());
+    return MaterialApp.router(
+        routerConfig: AppRouter.router, // Attach GoRouter here
+        debugShowCheckedModeBanner: false,
+       );
   }
 }
+
 class HomePage extends StatelessWidget {
-const HomePage({ super.key });
+  const HomePage({super.key});
 
   @override
-  Widget build(BuildContext context){
-    return const Scaffold(body:  WidgetsContainer(),);
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      body: WidgetsContainer(),
+    );
   }
 }

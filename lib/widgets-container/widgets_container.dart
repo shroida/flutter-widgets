@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/App%20Router/app_router.dart';
+import 'package:go_router/go_router.dart';
 
 class WidgetsContainer extends StatelessWidget {
   const WidgetsContainer({super.key});
@@ -20,7 +22,7 @@ class WidgetsContainer extends StatelessWidget {
               children: [
                 // Container 1
                 GestureDetector(
-                  // onTap: ,
+                  onTap: ()=>GoRouter.of(context).push(AppRouter.firstCard),
                   child: Container(
                     width: (MediaQuery.of(context).size.width / 2) -
                         50, // Half screen width
