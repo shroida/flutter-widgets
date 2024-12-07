@@ -10,6 +10,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: WidgetsContainer());
+    return const MaterialApp(home:HomePage());
+  }
+}
+class HomePage extends StatelessWidget {
+const HomePage({ super.key });
+
+  @override
+  Widget build(BuildContext context){
+    return const Scaffold(body:  WidgetsContainer(),);
   }
 }
